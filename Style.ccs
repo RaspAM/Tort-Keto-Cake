@@ -49,6 +49,23 @@
 
     <div class="products">
 
-        <div class="card">
+     <div class="card">
 
-            images
+    images/Сake1.jpg
+
+    <div class="card-content">
+
+        <h3>Кето Чизкейк</h3>
+
+        <p>
+            Без сахара и глютена.
+            Украшен ягодами и мятой.
+        </p>
+
+        <div class="price">
+            1200 ₺
+        </div>
+
+    </div>
+
+</div>
