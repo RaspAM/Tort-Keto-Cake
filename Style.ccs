@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #faf8f5;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg,#fffdf9,#f8f1e7);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 72px;
+    font-weight: 700;
+    color: #6b4226;
+    letter-spacing: 3px;
+}
+
+header p {
+    margin-top: 15px;
+    font-size: 24px;
+    color: #8a5a2b;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    color: #5c3d1e;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    line-height: 1.7;
+}
+
+.catalog {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.catalog h2 {
+    text-align: center;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0,0,0,.1);
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.price {
+    color: #8a5a2b;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: white;
+}
