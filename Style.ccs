@@ -1,82 +1,61 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #faf8f5;
-    color: #333;
-}
+<!DOCTYPE html>
+<html lang="ru">
 
-header {
-    background: linear-gradient(135deg,#fffdf9,#f8f1e7);
-    padding: 60px 20px;
-    text-align: center;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-header h1 {
-    margin: 0;
-    font-size: 72px;
-    font-weight: 700;
-    color: #6b4226;
-    letter-spacing: 3px;
-}
+    <title>
+        TORT KETO CAKE | Кето-торты без сахара в Мерсине
+    </title>
 
-header p {
-    margin-top: 15px;
-    font-size: 24px;
-    color: #8a5a2b;
-}
+    <link rel="stylesheet" href="style.css">
+</head>
 
-.hero {
-    text-align: center;
-    padding: 60px 20px;
-}
+<body>
 
-.hero h2 {
-    font-size: 48px;
-    color: #5c3d1e;
-}
+<header>
 
-.hero p {
-    font-size: 20px;
-    max-width: 900px;
-    margin: 20px auto;
-    line-height: 1.7;
-}
+    <h1>TORT KETO CAKE</h1>
 
-.catalog {
-    max-width: 1200px;
-    margin: auto;
-    padding: 40px 20px;
-}
+    <p>
+        Авторские кето-торты и десерты без сахара на заказ в Мерсине
+    </p>
 
-.catalog h2 {
-    text-align: center;
-}
+</header>
 
-.products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-    gap: 25px;
-}
+<section class="hero">
 
-.card {
-    background: #fff;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 3px 15px rgba(0,0,0,.1);
-}
+    <h2>
+        Кето-торты без сахара и глютена
+    </h2>
 
-.card-content {
-    padding: 20px;
-}
+    <p>
+        Полезные кето-десерты без сахара,
+        глютена, ГМО, трансжиров и
+        гидрогенизированных масел.
+    </p>
 
-.price {
-    color: #8a5a2b;
-    font-size: 24px;
-    font-weight: bold;
-}
+    <p>
+        Используем только натуральные подсластители:
+        Стевию и Монк Фрукт.
+    </p>
 
-footer {
-    text-align: center;
-    padding: 30px;
-    background: white;
-}
+    <p>
+        Низкоуглеводное лакомство для тех,
+        кто заботится о здоровье,
+        контролирует аппетит и хочет
+        наслаждаться вкусными десертами.
+    </p>
+
+</section>
+
+<section class="catalog">
+
+    <h2>Популярные торты</h2>
+
+    <div class="products">
+
+        <div class="card">
+
+            images
