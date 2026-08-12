@@ -1,71 +1,175 @@
-<!DOCTYPE html>
-<html lang="ru">
+/* Сброс */
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <title>
-        TORT KETO CAKE | Кето-торты без сахара в Мерсине
-    </title>
+/* Основы */
 
-    <link rel="stylesheet" href="style.css">
-</head>
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #fffdf8;
+    color: #3d2e25;
+    line-height: 1.7;
+}
 
-<body>
-<header>
-    <h1>Авторские кето-торты и десерты без сахара на заказ в Мерсине</h1>
-    <p>  TORT KETO CAK   </p>
-</header>
+/* Шапка */
 
-<section class="hero">
-    <h2>
-        Всегда свежие и нежные Кето-торты без сахара и глютена
-    </h2>
+header {
+    background: linear-gradient(135deg, #fff5e8, #fefcf8);
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 1px solid #f2e6d8;
+}
 
-    <p>
-        Полезные кето-десерты без сахара,
-        глютена, ГМО, трансжиров и
-        гидрогенизированных масел.
-    </p>
+header h1 {
+    font-size: 2.6rem;
+    margin-bottom: 15px;
+    color: #5a3420;
+}
 
-    <p>
-        Используем только натуральные подсластители:
-        Стевию и Монк Фрукт.
-    </p>
+header p {
+    font-size: 1.2rem;
+    color: #8a6a54;
+    font-weight: 500;
+}
 
-    <p>
-        Низкоуглеводное лакомство для тех,
-        кто заботится о здоровье,
-        контролирует аппетит и хочет
-        наслаждаться вкусными десертами.
-    </p>
+/* Hero */
 
-</section>
+.hero {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+    text-align: center;
+}
 
-<section class="catalog">
+.hero h2 {
+    font-size: 2rem;
+    color: #6a4127;
+    margin-bottom: 30px;
+}
 
-    <h2>Популярные торты</h2>
+.hero p {
+    max-width: 850px;
+    margin: 15px auto;
+    font-size: 1.1rem;
+}
 
-    <div class="products">
+/* Каталог */
 
-     <div class="card">
+.catalog {
+    padding: 60px 20px;
+    background: #fffaf4;
+}
 
-    images/Сake1.jpg
+.catalog h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #5a3420;
+}
 
-    <div class="card-content">
+/* Карточки */
 
-        <h3>Кето Чизкейк</h3>
+.products {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
 
-        <p>
-            Без сахара и глютена.
-            Украшен ягодами и мятой.
-        </p>
+.card {
+    background: #ffffff;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
 
-        <div class="price">
-            1200 ₺
-        </div>
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
 
-    </div>
+.card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
 
-</div>
+.card-content {
+    padding: 25px;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    color: #5a3420;
+    margin-bottom: 12px;
+}
+
+.card-content p {
+    color: #666;
+    margin-bottom: 18px;
+}
+
+/* Цена */
+
+.price {
+    display: inline-block;
+    background: #c49552;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Кнопка заказа */
+
+.order-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 28px;
+    background: #7dba46;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.order-btn:hover {
+    background: #63a12d;
+}
+
+/* Подвал */
+
+footer {
+    background: #4d3327;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer a {
+    color: #ffdba6;
+    text-decoration: none;
+}
+
+/* Адаптация */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.6rem;
+    }
+
+    .catalog h2 {
+   
