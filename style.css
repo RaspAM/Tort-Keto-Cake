@@ -45,7 +45,14 @@ body {
     padding: 50px 20px;
     border-bottom: 1px solid #f2e6d8;
 }
-
+.brand-slogan {
+    font-size: 1.1rem;
+    font-style: italic;
+    font-weight: 600;
+    color: var(--text-heading);
+    margin-bottom: 4px;
+    text-align: center;
+}
 .brand {
     font-size: 0.9rem;
     letter-spacing: 3px;
