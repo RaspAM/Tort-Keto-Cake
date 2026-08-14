@@ -420,4 +420,57 @@ footer p {
     .btn-telegram-lg, .btn-whatsapp-lg {
         width: 100%;
     }
+.btn-glow {
+    position: relative;
+    display: inline-block;
+    padding: 14px 28px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    border-radius: 12px;
+    text-decoration: none;
+    overflow: hidden;
+
+    /* Глубокая объемная тень */
+    box-shadow: 0 8px 20px rgba(52, 152, 219, 0.35), 
+                0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Эффект бесконечно скользящего блика */
+.btn-glow::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 40%;
+    height: 200%;
+    background: linear-gradient(
+        60deg, 
+        rgba(255, 255, 255, 0) 20%, 
+        rgba(255, 255, 255, 0.5) 50%, 
+        rgba(255, 255, 255, 0) 80%
+    );
+    transform: rotate(25deg);
+    animation: shine 3.5s infinite;
+}
+
+@keyframes shine {
+    0% { left: -60%; }
+    20% { left: 140%; }
+    100% { left: 140%; }
+}
+
+/* Наведение и клик */
+.btn-glow:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(52, 152, 219, 0.5), 
+                0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-glow:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+}
 }
