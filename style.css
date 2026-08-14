@@ -1,4 +1,4 @@
-/* Сброс стилей */
+/* Стиль */
 * {
     margin: 0;
     padding: 0;
@@ -29,7 +29,7 @@ body {
     background: var(--bg-main);
     color: var(--text-primary);
     line-height: 1.6;
-    text-align: center; /* Главный параметр для выравнивания текста по центру */
+    text-align: center;
 }
 
 .container {
@@ -45,6 +45,7 @@ body {
     padding: 50px 20px;
     border-bottom: 1px solid #f2e6d8;
 }
+
 .brand-slogan {
     font-size: 1.1rem;
     font-style: italic;
@@ -53,6 +54,7 @@ body {
     margin-bottom: 4px;
     text-align: center;
 }
+
 .brand {
     font-size: 0.9rem;
     letter-spacing: 3px;
@@ -117,7 +119,93 @@ body {
     text-align: center;
 }
 
-/* Общие стили для кнопок */
+/* Овальная кнопка с малиновой тенью */
+.more-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 28px;
+    border-radius: 50px;
+    color: #1d3377dc;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 2px solid #e11d48;
+    box-shadow: 0 6px 18px rgba(225, 29, 72, 0.35);
+    transition: all 0.3s ease;
+}
+
+.more-btn:hover {
+    background-color: #e11d48;
+    color: #ffffff;
+    box-shadow: 0 8px 22px rgba(225, 29, 72, 0.5);
+    transform: translateY(-2px);
+}
+
+.more-btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 10px rgba(225, 29, 72, 0.3);
+}
+
+/* Стили для объёмных кнопок мессенджеров (consult-btn) */
+.consult-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.consult-btn img, 
+.consult-btn svg {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.consult-btn:hover {
+    transform: translateY(-3px);
+}
+
+.consult-btn:hover img,
+.consult-btn:hover svg {
+    transform: scale(1.15) rotate(-5deg);
+}
+
+.consult-btn:active {
+    transform: translateY(1px);
+}
+
+/* Градиенты Telegram и WhatsApp */
+.consult-btn.telegram {
+    background: linear-gradient(135deg, #2AABEE, #229ED9);
+    box-shadow: 0 6px 18px rgba(42, 171, 238, 0.35);
+}
+
+.consult-btn.telegram:hover {
+    background: linear-gradient(135deg, #32b5f9, #1f93cc);
+    box-shadow: 0 8px 22px rgba(42, 171, 238, 0.5);
+}
+
+.consult-btn.whatsapp {
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
+}
+
+.consult-btn.whatsapp:hover {
+    background: linear-gradient(135deg, #28e16d, #0f7a6e);
+    box-shadow: 0 8px 22px rgba(37, 211, 102, 0.5);
+}
+
+/* Общие стили для остальных кнопок */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -148,27 +236,6 @@ body {
     box-shadow: 0 5px 15px rgba(196, 149, 82, 0.4);
 }
 
-/* Цвета мессенджеров */
-.btn-telegram {
-    background: var(--tg-color);
-    color: #fff;
-}
-
-.btn-telegram:hover {
-    background: var(--tg-color-hover);
-    box-shadow: 0 4px 12px rgba(0, 136, 204, 0.3);
-}
-
-.btn-whatsapp {
-    background: var(--wa-color);
-    color: #fff;
-}
-
-.btn-whatsapp:hover {
-    background: var(--wa-color-hover);
-    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
-}
-
 /* Секция Каталога */
 .catalog {
     padding: 50px 20px;
@@ -183,7 +250,7 @@ body {
     color: var(--text-heading);
 }
 
-/* Сетка карточек товаров: 2 в ряд */
+/* Сетка карточек товаров */
 .products {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -243,7 +310,6 @@ body {
     text-align: center;
 }
 
-/* Ценник */
 .price {
     display: inline-block;
     background: var(--accent-gold);
@@ -257,7 +323,6 @@ body {
     text-align: center;
 }
 
-/* Кнопки заказа в карточках */
 .card-actions {
     display: flex;
     gap: 6px;
@@ -276,21 +341,11 @@ body {
     transition: background-color 0.3s, opacity 0.2s;
 }
 
-.btn-order.btn-tg {
-    background: var(--tg-color);
-}
+.btn-order.btn-tg { background: var(--tg-color); }
+.btn-order.btn-tg:hover { background: var(--tg-color-hover); }
 
-.btn-order.btn-tg:hover {
-    background: var(--tg-color-hover);
-}
-
-.btn-order.btn-wa {
-    background: var(--wa-color);
-}
-
-.btn-order.btn-wa:hover {
-    background: var(--wa-color-hover);
-}
+.btn-order.btn-wa { background: var(--wa-color); }
+.btn-order.btn-wa:hover { background: var(--wa-color-hover); }
 
 /* Секция Контактов */
 .contacts {
@@ -320,45 +375,6 @@ body {
     flex-wrap: wrap;
 }
 
-.icon-gif {
-    width: 22px;
-    height: 22px;
-    vertical-align: middle;
-}
-
-.btn-telegram-lg, .btn-whatsapp-lg {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 14px 28px;
-    font-size: 1rem;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 700;
-    color: #fff;
-    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
-    text-align: center;
-}
-
-.btn-telegram-lg {
-    background: var(--tg-color);
-}
-
-.btn-telegram-lg:hover {
-    background: var(--tg-color-hover);
-    box-shadow: 0 6px 20px rgba(0, 136, 204, 0.35);
-}
-
-.btn-whatsapp-lg {
-    background: var(--wa-color);
-}
-
-.btn-whatsapp-lg:hover {
-    background: var(--wa-color-hover);
-    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
-}
-
 /* Подвал */
 footer {
     background: #4a2a19;
@@ -366,10 +382,6 @@ footer {
     text-align: center;
     padding: 20px;
     font-size: 0.9rem;
-}
-
-footer p {
-    text-align: center;
 }
 
 /* Адаптив под мобильные устройства */
@@ -417,60 +429,7 @@ footer p {
         flex-direction: column;
     }
 
-    .btn-telegram-lg, .btn-whatsapp-lg {
+    .consult-btn {
         width: 100%;
     }
-.btn-glow {
-    position: relative;
-    display: inline-block;
-    padding: 14px 28px;
-    font-size: 1.05rem;
-    font-weight: 600;
-    color: #ffffff;
-    background: linear-gradient(135deg, #2c3e50, #3498db);
-    border-radius: 12px;
-    text-decoration: none;
-    overflow: hidden;
-
-    /* Глубокая объемная тень */
-    box-shadow: 0 8px 20px rgba(52, 152, 219, 0.35), 
-                0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-/* Эффект бесконечно скользящего блика */
-.btn-glow::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -60%;
-    width: 40%;
-    height: 200%;
-    background: linear-gradient(
-        60deg, 
-        rgba(255, 255, 255, 0) 20%, 
-        rgba(255, 255, 255, 0.5) 50%, 
-        rgba(255, 255, 255, 0) 80%
-    );
-    transform: rotate(25deg);
-    animation: shine 3.5s infinite;
-}
-
-@keyframes shine {
-    0% { left: -60%; }
-    20% { left: 140%; }
-    100% { left: 140%; }
-}
-
-/* Наведение и клик */
-.btn-glow:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 25px rgba(52, 152, 219, 0.5), 
-                0 6px 10px rgba(0, 0, 0, 0.15);
-}
-
-.btn-glow:active {
-    transform: translateY(1px);
-    box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
-}
 }
