@@ -1,4 +1,4 @@
-/* Стиль */
+/* Стиль 2*/
 * {
     margin: 0;
     padding: 0;
@@ -119,34 +119,35 @@ body {
     text-align: center;
 }
 
-/* Овальная кнопка с малиновой тенью */
+/* КНОПКА ССЫЛКИ НА СТАТЬЮ (.more-btn) */
 .more-btn {
     display: inline-block;
-    margin-top: 15px;
+    margin: 20px auto;
     padding: 12px 28px;
     border-radius: 50px;
-    color: #1d3377dc;
-    font-weight: bold;
-    text-decoration: none;
     background-color: #ffffff;
+    color: #e11d48;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
     border: 2px solid #e11d48;
-    box-shadow: 0 6px 18px rgba(225, 29, 72, 0.35);
+    box-shadow: 0 6px 18px rgba(225, 29, 72, 0.25);
     transition: all 0.3s ease;
 }
 
 .more-btn:hover {
     background-color: #e11d48;
     color: #ffffff;
-    box-shadow: 0 8px 22px rgba(225, 29, 72, 0.5);
+    box-shadow: 0 8px 22px rgba(225, 29, 72, 0.45);
     transform: translateY(-2px);
 }
 
 .more-btn:active {
     transform: translateY(1px);
-    box-shadow: 0 3px 10px rgba(225, 29, 72, 0.3);
+    box-shadow: 0 3px 10px rgba(225, 29, 72, 0.2);
 }
 
-/* Стили для объёмных кнопок мессенджеров (consult-btn) */
+/* Стили для кнопок мессенджеров (.consult-btn) */
 .consult-btn {
     display: inline-flex;
     align-items: center;
@@ -157,34 +158,21 @@ body {
     font-size: 1rem;
     font-weight: 700;
     text-decoration: none;
-    color: #ffffff !important;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #ffffff;
+    transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
-.consult-btn img, 
-.consult-btn svg {
+.consult-btn img {
     width: 24px;
     height: 24px;
-    object-fit: contain;
     display: block;
-    transition: transform 0.3s ease;
 }
 
 .consult-btn:hover {
     transform: translateY(-3px);
 }
 
-.consult-btn:hover img,
-.consult-btn:hover svg {
-    transform: scale(1.15) rotate(-5deg);
-}
-
-.consult-btn:active {
-    transform: translateY(1px);
-}
-
-/* Градиенты Telegram и WhatsApp */
 .consult-btn.telegram {
     background: linear-gradient(135deg, #2AABEE, #229ED9);
     box-shadow: 0 6px 18px rgba(42, 171, 238, 0.35);
@@ -192,7 +180,6 @@ body {
 
 .consult-btn.telegram:hover {
     background: linear-gradient(135deg, #32b5f9, #1f93cc);
-    box-shadow: 0 8px 22px rgba(42, 171, 238, 0.5);
 }
 
 .consult-btn.whatsapp {
@@ -202,7 +189,6 @@ body {
 
 .consult-btn.whatsapp:hover {
     background: linear-gradient(135deg, #28e16d, #0f7a6e);
-    box-shadow: 0 8px 22px rgba(37, 211, 102, 0.5);
 }
 
 /* Общие стили для остальных кнопок */
