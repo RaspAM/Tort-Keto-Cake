@@ -418,4 +418,26 @@ footer {
     .consult-btn {
         width: 100%;
     }
+    /* Принудительная овальная кнопка ссылки на статью */
+a.more-btn {
+    display: inline-block !important;
+    margin: 20px auto !important;
+    padding: 12px 28px !important;
+    border-radius: 50px !important;
+    background-color: #ffffff !important;
+    color: #e11d48 !important;
+    font-weight: 700 !important;
+    font-size: 0.95rem !important;
+    text-decoration: none !important;
+    border: 2px solid #e11d48 !important;
+    box-shadow: 0 6px 18px rgba(225, 29, 72, 0.25) !important;
+    transition: all 0.3s ease !important;
+}
+
+a.more-btn:hover {
+    background-color: #e11d48 !important;
+    color: #ffffff !important;
+    box-shadow: 0 8px 22px rgba(225, 29, 72, 0.45) !important;
+    transform: translateY(-2px) !important;
+}
 }
