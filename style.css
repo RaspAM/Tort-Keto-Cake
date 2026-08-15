@@ -165,25 +165,25 @@ body {
     box-shadow: 0 8px 22px rgba(3, 105, 161, 0.35);
 }
 
-/* Кнопки мессенджеров (.consult-btn) */
+/* Уменьшенные кнопки мессенджеров (.consult-btn) */
 .consult-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    padding: 12px 28px;
+    gap: 8px;
+    padding: 8px 18px; /* Было 12px 28px */
     border-radius: 50px;
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 0.85rem; /* Было 1rem */
+    font-weight: 600;
     text-decoration: none;
     color: #ffffff;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
 }
 
 .consult-btn img {
-    width: 24px;
-    height: 24px;
+    width: 18px; /* Было 24px */
+    height: 18px; /* Было 24px */
     display: block;
 }
 
