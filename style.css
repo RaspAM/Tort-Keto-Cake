@@ -135,6 +135,17 @@ body {
     transition: all 0.3s ease;
 }
 
+/* Отдельный стиль для кнопки отзывов */
+.reviews-preview .more-btn {
+    background-color: #e0f2fe;
+    color: #0369a1;
+    border-color: #bae6fd;
+}
+
+.reviews-preview .more-btn:hover {
+    background-color: #bae6fd;
+    color: #0c4a6e;
+}
 .more-btn:hover {
     background-color: #e11d48;
     color: #ffffff;
