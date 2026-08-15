@@ -1,25 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы | TORT KETO CAKE в Мерсине</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #fffdf8;
+            color: #3d2e25;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Шапка */
+        .main-header {
+            background: linear-gradient(135deg, #fff5e8, #fefcf8);
+            padding: 40px 20px;
+            border-bottom: 1px solid #f2e6d8;
+        }
+
+        .brand-slogan {
+            font-size: 1.1rem;
+            font-style: italic;
+            font-weight: 600;
+            color: #5a3420;
+            margin-bottom: 4px;
+        }
+
+        .brand {
+            font-size: 0.9rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            color: #c49552;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #5a3420;
+            margin-bottom: 15px;
+        }
+
+        /* Кнопка */
+        .more-btn {
+            display: inline-block;
+            padding: 10px 24px;
+            border-radius: 50px;
+            background-color: #ffffff;
+            color: #e11d48;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-decoration: none;
+            border: 2px solid #e11d48;
+            box-shadow: 0 4px 12px rgba(225, 29, 72, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .more-btn:hover {
+            background-color: #e11d48;
+            color: #ffffff;
+        }
+
+        /* Секция с отзывами */
+        .catalog {
+            padding: 40px 20px;
+            background: #fffaf4;
+            min-height: 50vh;
+        }
+
+        /* Сетка для картинок-скриншотов */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 30px auto 0 auto;
+        }
+
+        .review-card {
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            border: 1px solid #eee;
+        }
+
+        .review-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Подвал */
+        footer {
+            background: #4a2a19;
+            color: #d1bcac;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
 <header class="main-header">
     <div class="container">
         <p class="brand-slogan">«Вкусняшки от Малинина»</p>
         <p class="brand">Торты КЕТО на заказ в Мерсине</p>
         <h1>Отзывы</h1>
-
-        <div style="margin-top: 15px;">
-            <a href="index.html" class="more-btn">← На главную</a>
-        </div>
+        
     </div>
 </header>
 
 <section class="catalog">
     <div class="container">
 
-        <!-- Галерея скриншотов -->
-        <div class="reviews-grid" id="reviewsGallery">
-            <!-- Скриншоты подгружаются автоматически -->
+        <!-- Простой понятный список скриншотов -->
+        <div class="reviews-grid">
+            
+            <div class="review-card">
+                <img src="images/review1.jpg" alt="Отзыв 1">
+            </div>
+
+            <div class="review-card">
+                <img src="images/review2.jpg" alt="Отзыв 2">
+            </div>
+
+            <div class="review-card">
+                <img src="images/review3.jpg" alt="Отзыв 3">
+            </div>
+
         </div>
 
-        <div style="text-align: center; margin-top: 40px;">
+        <div style="margin-top: 40px;">
             <a href="index.html" class="more-btn">← На главную</a>
         </div>
     </div>
 </section>
+
+<footer>
+    <div class="container">
+        <p>© 2026 TORT KETO CAKE. Мерсин, Турция.</p>
+    </div>
+</footer>
+
+</body>
+</html>
