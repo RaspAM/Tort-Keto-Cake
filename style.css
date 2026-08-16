@@ -438,42 +438,31 @@ footer {
     .consult-btn {
         width: 100%;
     }
-  /* Изящный минималистичный стиль кнопки (Outline) */
-footer a.mw-email-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px 24px;
-  background-color: transparent;
-  color: #f5ebe6;
-  border: 1px solid rgba(245, 235, 230, 0.4);
-  border-radius: 30px;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.3px;
-  transition: all 0.3s ease;
+  /* Нежно-голубая кнопка для блока отзывов */
+.reviews-preview .more-btn {
+    background-color: #e0f2fe;
+    color: #0369a1;
+    border-color: #bae6fd;
+    box-shadow: 0 6px 18px rgba(3, 105, 161, 0.2);
 }
 
-/* Цвет иконки в тон тексту */
-footer a.mw-email-button .mw-email-icon {
-  font-size: 1.1em;
-  color: #f5ebe6;
-  transition: color 0.3s ease;
+.reviews-preview .more-btn:hover {
+    background-color: #bae6fd;
+    color: #0c4a6e;
+    box-shadow: 0 8px 22px rgba(3, 105, 161, 0.35);
 }
 
-/* Мягкое заполнение при наведении */
-footer a.mw-email-button:hover {
-  background-color: #f5ebe6;
-  color: #3d2314;
-  border-color: #f5ebe6;
-  text-decoration: none;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+/* Кнопка почты по образцу кнопки отзывов */
+.more-btn.email-btn {
+    background-color: #e0f2fe;
+    color: #0369a1;
+    border-color: #bae6fd;
+    box-shadow: 0 6px 18px rgba(3, 105, 161, 0.2);
 }
 
-footer a.mw-email-button:hover .mw-email-icon {
-  color: #3d2314;
+.more-btn.email-btn:hover {
+    background-color: #bae6fd;
+    color: #0c4a6e;
+    box-shadow: 0 8px 22px rgba(3, 105, 161, 0.35);
 }
 }
