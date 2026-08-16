@@ -440,27 +440,19 @@ footer {
     .consult-btn {
         width: 100%;
     }
-   .contact-email {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-family: inherit;
-  font-size: 15px;
-}
-
-.email-label {
-  color: #666666;
-}
-
-.email-link {
+ .email-button {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid #2b2b2b;
+  border-radius: 20px;
   color: #2b2b2b;
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s ease;
+  font-size: 14px;
+  transition: all 0.2s ease;
 }
 
-.email-link:hover {
-  color: #e67e22; /* Цвет при наведении */
-  text-decoration: underline;
+.email-button:hover {
+  background-color: #2b2b2b;
+  color: #ffffff;
 }
 }
