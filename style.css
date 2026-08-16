@@ -440,19 +440,42 @@ footer {
     .consult-btn {
         width: 100%;
     }
- .email-button {
-  display: inline-block;
-  padding: 8px 16px;
-  border: 1px solid #2b2b2b;
-  border-radius: 20px;
-  color: #2b2b2b;
+ /* Стили для кнопки Варианта №1 */
+.mw-email-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px; /* Отступ между иконкой и текстом */
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #f0f7f4 0%, #e8f1ec 100%); /* Очень светлый, почти белый градиент */
+  color: #3e5c4a; /* Глубокий, спокойный зеленый цвет для текста */
   text-decoration: none;
-  font-size: 14px;
-  transition: all 0.2s ease;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Или шрифт вашего сайта */
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 30px; /* Сильно скругленные углы */
+  border: 1px solid rgba(62, 92, 74, 0.1); /* Тонкая, едва заметная рамка */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Очень легкая, мягкая тень */
+  transition: all 0.3s ease; /* Плавная анимация для всех свойств */
+  cursor: pointer;
 }
 
-.email-button:hover {
-  background-color: #2b2b2b;
-  color: #ffffff;
+/* Иконка конверта */
+.mw-email-icon {
+  font-size: 1.2em;
+  opacity: 0.8;
+}
+
+/* Эффекты при наведении (Hover) */
+.mw-email-button:hover {
+  background: linear-gradient(135deg, #e8f1ec 0%, #f0f7f4 100%); /* Перевернутый градиент */
+  color: #2c4a38; /* Чуть более темный текст */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); /* Чуть более заметная тень */
+  transform: translateY(-2px); /* Кнопка слегка «всплывает» */
+}
+
+/* Эффект при нажатии */
+.mw-email-button:active {
+  transform: translateY(1px); /* Кнопка слегка «нажимается» */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 }
