@@ -121,31 +121,15 @@ body {
 /* ==========================================
    3. КНОПКИ И ССЫЛКИ
    ========================================== */
-/* Аккуратная овальная кнопка с иконкой (.more-btn) */
-.more-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px auto;
-    padding: 12px 24px;
-    border-radius: 50px;
-    background-color: #ffffff;
-    color: #e11d48;
-    font-weight: 600;
-    font-size: 0.95rem;
-    text-decoration: none;
-    border: 1.5px solid #e11d48;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    transition: all 0.25s ease;
-    text-align: center;
+.more-btn .hand-svg {
+    margin-left: 8px;
+    vertical-align: middle;
+    animation: tap-hand 1.2s infinite ease-in-out;
 }
 
-.more-btn .hand-gif {
-    width: 22px;
-    height: 22px;
-    margin-left: 8px;
-    display: inline-block;
-    vertical-align: middle;
+@keyframes tap-hand {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(5px); }
 }
 
 .more-btn:hover {
