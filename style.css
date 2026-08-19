@@ -258,7 +258,7 @@ body {
    4. КАТАЛОГ И КАРТОЧКИ
    ========================================== */
 .catalog {
-    padding: 50px 20px;
+    padding: 25px 10px;
     background: var(--bg-section);
     text-align: center;
 }
