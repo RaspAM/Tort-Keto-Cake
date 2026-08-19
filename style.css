@@ -121,27 +121,48 @@ body {
 /* ==========================================
    3. КНОПКИ И ССЫЛКИ
    ========================================== */
-.more-btn .hand-svg {
-    margin-left: 8px;
-    vertical-align: middle;
-    animation: tap-hand 1.2s infinite ease-in-out;
+/* Овальная кнопка ссылки на статью */
+.more-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 25px auto 10px auto;
+    padding: 12px 28px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    color: var(--text-heading);
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1.5px solid var(--accent-gold);
+    box-shadow: 0 3px 12px rgba(196, 149, 82, 0.15);
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-@keyframes tap-hand {
-    0%, 100% { transform: translateX(0); }
-    50% { transform: translateX(5px); }
+.more-btn .btn-arrow {
+    font-size: 1.1rem;
+    color: var(--accent-gold);
+    transition: transform 0.25s ease, color 0.25s ease;
 }
 
 .more-btn:hover {
-    background-color: #e11d48;
+    background-color: var(--accent-gold);
     color: #ffffff;
-    box-shadow: 0 4px 12px rgba(225, 29, 72, 0.25);
-    transform: translateY(-1px);
+    border-color: var(--accent-gold);
+    box-shadow: 0 6px 18px rgba(196, 149, 82, 0.3);
+    transform: translateY(-2px);
+}
+
+.more-btn:hover .btn-arrow {
+    color: #ffffff;
+    transform: translateX(4px);
 }
 
 .more-btn:active {
     transform: translateY(0);
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(196, 149, 82, 0.2);
 }
 
 /* Нежно-голубая кнопка для блока отзывов */
@@ -388,8 +409,8 @@ footer {
    ========================================== */
 @media (max-width: 500px) {
     .more-btn {
-        width: fit-content;
-        max-width: 90%;
+        width: 100%;
+        max-width: 320px;
         padding: 10px 20px;
         font-size: 0.9rem;
     }
