@@ -30,8 +30,17 @@
         </p>
 
         <!-- Кнопка перехода на страницу пирогов -->
-        <div style="margin: 15px 0 20px 0;">
-            <a href="pies.html" class="more-btn" style="display: inline-flex; align-items: center; gap: 8px;">
+        <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin: 20px 0;">
+            <!-- Кнопка к тортам (скролл к каталогу на текущей странице) -->
+            <a href="#catalog" class="more-btn" style="display: inline-flex; align-items: center; gap: 8px;">
+                Посмотреть торты
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+                </svg>
+            </a>
+
+            <!-- Кнопка перехода к пирогам (отдельная страница) -->
+            <a href="pies.html" class="more-btn" style="display: inline-flex; align-items: center; gap: 8px; background-color: transparent; border: 2px solid currentColor;">
                 Выбрать пирог, кулебяку или расстегай
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.71 12l-7.86-7.86-1.42 1.42L16.86 11H5v2z"/>
@@ -89,7 +98,7 @@
 
 <section class="catalog" id="catalog">
     <div class="container">
-        <h2>Каталог авторских кето-тортов</h2>
+        <h2>Авторские торты кето</h2>
         <p style="text-align: center; margin-bottom: 16px;">Изображения для общего представления о продукте и могут отличаться от оригинала</p>
         <p style="text-align: center; margin-bottom: 20px;">Характеристики (КБЖУ и вес) приведены для торта указанного размера.</p>
 
